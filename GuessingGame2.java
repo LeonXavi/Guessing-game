@@ -5,7 +5,7 @@ public class GuessingGame2 {
 
 	public static void main(String[] args) {
 		
-		//M‰‰ritet‰‰n pelin muuttujat
+		//Defining the variables
 		
 		
 		String nameToGuess = "Jonas" ;
@@ -25,13 +25,13 @@ public class GuessingGame2 {
 				System.out.println("You guessed right!");
 				System.out.println("It took you " + numberOfTries + " tries");
 				
-			// Lis‰t‰‰n mahdollisuus lopettaa peli ilman arvausta	
+			// Adding the possibility to end without a guess
 				
 			} else if (guess.equals("end")) {
 				stop = true;
 				System.out.println("End of game.");
 				
-			// Printtaus jos vastaat v‰‰rin
+			// Print if you guess wrong
 				
 		    } else if (guess != nameToGuess) {
 				System.out.println("Your guess is wrong");	
